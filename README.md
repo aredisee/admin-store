@@ -5,9 +5,7 @@ Dibangun menggunakan **Node.js**, **Express.js**, **EJS**, dan **MySQL** sebagai
 
 ---
 
-## 🚀 Fitur Utama
-- ✅ CRUD Produk  
-- ✅ Manajemen Stok  
+## 🚀 Fitur Utama  
 - ✅ Input & Pembatalan Pembelian  
 - ✅ Tampilan admin dengan EJS  
 - ✅ Koneksi database MySQL   
@@ -35,17 +33,7 @@ cd admin-store
 npm install
 ```
 
-### 3️⃣ Konfigurasi Database
-Buat file .env di root folder, lalu isi seperti ini:
-```bash
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=
-DB_NAME=admin_store
-PORT=3000
-```
-
-### 4️⃣ Jalankan Server
+### 3️⃣ Jalankan Server
 ```bash
 npm start
 ```
