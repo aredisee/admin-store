@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
       res.render("purchases", {
         title: "Data Pembelian",
         purchases,
-        products, // ✅ dikirim ke EJS
+        products, 
       });
     });
   });
