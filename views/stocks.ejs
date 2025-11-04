@@ -1,0 +1,28 @@
+<h2 class="mb-4 text-center">📊 Stok Produk</h2>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <table class="table table-bordered table-striped align-middle">
+      <thead class="table-success">
+        <tr>
+          <th>ID</th>
+          <th>Nama Produk</th>
+          <th>Jumlah Stok</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% stocks.forEach(s => { %>
+          <tr>
+            <td><%= s.id %></td>
+            <td><%= s.nama_produk %></td>
+            <td><%= s.jumlah %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="mt-3">
+  <a href="/" class="btn btn-secondary">⬅️ Kembali ke Dashboard</a>
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h2><%= title %></h2>
+  <a href="/purchases">⬅️ Kembali ke daftar pembelian</a>
+  <hr />
+
+  <form method="POST" action="/purchases/add">
+    <label>Pilih Produk:</label>
+    <select name="produk_id" required>
+      <% products.forEach(p => { %>
+        <option value="<%= p.id %>"><%= p.nama %> - Rp<%= p.harga %></option>
+      <% }) %>
+    </select>
+    <br /><br />
+
+    <label>Jumlah:</label>
+    <input type="number" name="jumlah" min="1" required />
+    <br /><br />
+
+    <button type="submit">💾 Simpan Pembelian</button>
+  </form>
+</body>
+</html>
